@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>For loop</title>
+        <link rel="stylesheet" href="test.js">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let a = 10;
+            for(let i = 0 ; i < a; i++){
+                if(i%2==0){
+                    document.writeln(i + "\t");
+                }
+            }
+
+            do {
+                document.writeln(a);
+                a++;
+            }
+            while(a<20);
+
+            while(a<30){
+                document.writeln(a);
+                if(a==25){
+                    break;
+                }
+                a++;
+            }
+            document.getElementById("demo").innerHTML = "Hello \n World";
+        </script>
+    </body>
+</html>
